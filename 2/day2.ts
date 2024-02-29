@@ -1,5 +1,6 @@
 namespace AdventOfCode2 {
-  export function getInput(fileName: string): number[] {
+  export function getInput(): number[] {
+    const fileName = './2/input.txt';
     const fs = require('fs');
     return fs
       .readFileSync(fileName, 'utf8')
@@ -33,19 +34,51 @@ namespace AdventOfCode2 {
     return output;
   }
 
-  function restoreTo1202ProgramAlarm(intCode: number[]) {
-    intCode[1] = 12;
-    intCode[2] = 2;
+  export function getNounAndVerb(
+    intCode: number[],
+    output: number
+  ): {
+    noun: number;
+    verb: number;
+  } {
+    const instCodeLength = intCode.length;
+    for (let noun = 0; noun < instCodeLength; noun++) {
+      for (let verb = 0; verb < instCodeLength; verb++) {
+        const restoredIntCode = getRestoredIntCode(intCode, noun, verb);
+        const calculatedOutput = runProgram(restoredIntCode)[0];
+        if (calculatedOutput === output) {
+          return { noun, verb };
+        }
+      }
+    }
+    return { noun: 0, verb: 0 };
   }
 
-  function solve2a(): number {
-    const intCode = getInput('./2/input.txt');
-    restoreTo1202ProgramAlarm(intCode);
-    const intCodeFinalState = runProgram(intCode);
+  function getRestoredIntCode(
+    intCode: number[],
+    noun: number,
+    verb: number
+  ): number[] {
+    const restoredIntCode = [...intCode];
+    restoredIntCode[1] = noun;
+    restoredIntCode[2] = verb;
+    return restoredIntCode;
+  }
+
+  function solve2a(intCode: number[]): number {
+    const restoredIntCode = getRestoredIntCode(intCode, 12, 2);
+    const intCodeFinalState = runProgram(restoredIntCode);
     return intCodeFinalState[0];
   }
 
-  console.log(`The result of AoC 2019 2a: ${solve2a()}`);
+  function solve2b(intCode: number[]): number {
+    const { noun, verb } = getNounAndVerb(intCode, 19690720);
+    return 100 * noun + verb;
+  }
+
+  const intCode = getInput();
+  console.log(`The result of AoC 2019 2a: ${solve2a(intCode)}`);
+  console.log(`The result of AoC 2019 2b: ${solve2b(intCode)}`);
 }
 
 export { AdventOfCode2 };
