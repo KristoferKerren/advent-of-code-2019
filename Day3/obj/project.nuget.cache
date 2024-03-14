@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "McS11QO9W6dSYPq4vkGcIg23sTx2zx0O7w9I4ZiU0A4tQubjSipb7JO4ZhfdSVpcbiMtkaIGyF2cRuhZwQbyhg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\K38959\\source\\repos\\AdventOfCode2019\\Day3\\Day3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\K38959\\.nuget\\packages\\nunit\\4.1.0\\nunit.4.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

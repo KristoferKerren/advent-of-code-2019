@@ -1,0 +1,11 @@
+C:\Users\K38959\source\repos\AdventOfCode2019\Global\bin\Debug\net8.0\Global.deps.json
+C:\Users\K38959\source\repos\AdventOfCode2019\Global\bin\Debug\net8.0\Global.dll
+C:\Users\K38959\source\repos\AdventOfCode2019\Global\bin\Debug\net8.0\Global.pdb
+C:\Users\K38959\source\repos\AdventOfCode2019\Global\obj\Debug\net8.0\Global.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\K38959\source\repos\AdventOfCode2019\Global\obj\Debug\net8.0\Global.AssemblyInfoInputs.cache
+C:\Users\K38959\source\repos\AdventOfCode2019\Global\obj\Debug\net8.0\Global.AssemblyInfo.cs
+C:\Users\K38959\source\repos\AdventOfCode2019\Global\obj\Debug\net8.0\Global.csproj.CoreCompileInputs.cache
+C:\Users\K38959\source\repos\AdventOfCode2019\Global\obj\Debug\net8.0\Global.dll
+C:\Users\K38959\source\repos\AdventOfCode2019\Global\obj\Debug\net8.0\refint\Global.dll
+C:\Users\K38959\source\repos\AdventOfCode2019\Global\obj\Debug\net8.0\Global.pdb
+C:\Users\K38959\source\repos\AdventOfCode2019\Global\obj\Debug\net8.0\ref\Global.dll
