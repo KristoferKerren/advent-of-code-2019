@@ -2,6 +2,6 @@
 {
     public static class Constants
     {
-        public const string RootFolder = @"\Users\K38959\source\repos\AdventOfCode2019\";
+        public const string RootFolder = @"\Users\K38959\source\repos\advent-of-code-2019\";
     }
 }
