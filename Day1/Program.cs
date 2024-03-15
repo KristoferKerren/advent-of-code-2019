@@ -27,7 +27,7 @@ namespace Day1
                     input = ParseToFuels(input);
                     sum += input.Sum();
                 }
-                Console.WriteLine(sum);
+                Console.WriteLine($"The result of Day1a is {sum}");
             }
             catch (Exception e)
             {

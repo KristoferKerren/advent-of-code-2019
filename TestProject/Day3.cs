@@ -1,5 +1,4 @@
 ﻿using Day3;
-using System.Linq;
 
 [TestFixture]
 public class TestsDay3

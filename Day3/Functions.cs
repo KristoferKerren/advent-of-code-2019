@@ -1,6 +1,6 @@
 ﻿namespace Day3
 {
-    static class Functions
+    public static class Functions
     {
         public static List<Line> ToLines(this string input)
         {
